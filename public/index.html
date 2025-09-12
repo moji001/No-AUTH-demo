@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Basic Auth</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <!-- Register Section -->
+      <div class="second-container">
+        <h1>No Auth Demo/Practice</h1>
+        <form id="registerForm">
+          <div class="input-row">
+            <input
+              type="text"
+              name="username"
+              placeholder="Username"
+              required
+            />
+            <input type="email" name="email" placeholder="Email" required />
+            <input
+              type="password"
+              name="password"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <button type="submit">Register</button>
+        </form>
+      </div>
+
+      <!-- Log Section -->
+      <div class="log-container">
+        <p>Here your Status :</p>
+        <div id="log">
+          <p>Testing Now</p>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/scripts.js"></script>
+  </body>
+</html>
