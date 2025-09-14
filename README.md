@@ -15,17 +15,20 @@ It uses **Express** and **CORS**, with no authentication, login, or registration
 ## Steps to Run
 
 1. **Clone the repository**
+
 ```bash
 git clone https://github.com/moji001/No-AUTH-demo.git
 cd No-AUTH-demo
 ```
 
 2. Install dependencies
+
 ```bash
-npm install express cors
+npm install express
 ```
 
 3. Start the server
+
 ```bash
 node server.js
 ```

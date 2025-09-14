@@ -14,8 +14,8 @@ app.use(express.static(path.join(__dirname, "public"))); // serve frontend
 // POST route to save user
 app.post("/register", async (req, res) => {
   try {
-    const { username, email, password } = req.body;
-    if (!username || !email || !password) {
+    const { name, email, password } = req.body;
+    if (!name || !email || !password) {
       return res.status(400).json({ message: "All fields required" });
     }
 
@@ -29,7 +29,7 @@ app.post("/register", async (req, res) => {
     }
 
     // Add new user
-    users.push({ username, email, password });
+    users.push({ name, email, password });
 
     // Save back to file
     await fs.writeFile(USERS_FILE, JSON.stringify(users, null, 2));
